@@ -1,5 +1,29 @@
+@keyframes fade-in {
+    from {
+        translate: 0 10px;
+        opacity: 0;
+    }
+    to {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+    background-color: white;
+    color: black;
+    font-family: Verdana;
+}
+
+body * {
+    --_duration: .5s;
+    --_delay: .1s;
+    --_index: calc(sibling-index() - 1);
+
+    animation-name: fade-in;
+    animation-duration: var(--_duration);
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: calc(var(--_delay) * var(--_index));
 }
