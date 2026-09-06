@@ -7,7 +7,16 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <h1>Page Not Found</h1>
-    <p>The requested page was not found.</p>
+    <h1>404</h1>
+    <p>Oops! There isn't a page here, or maybe it was moved somewhere else.</p>
+    <button id="back-to-home">
+        Back to home
+    </button>
   </body>
+  <script>
+    document.getElementById("back-to-home")
+            .addEventListener("click", (e) => {
+                window.location.href = "/index.html"
+            })
+  </script>
 </html>
