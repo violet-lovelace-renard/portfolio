@@ -17,6 +17,9 @@ body {
     margin: 0;
     padding-left: 15vw;
     padding-right: 15vw;
+
+    --color-body: #12061F;
+    --color-accent: #842BD6;
 }
 
 body * {
@@ -37,13 +40,13 @@ body * {
 
 #splash-1 {
     font-size: 7vw;
-    color: #12061F;
+    color: var(--color-body);
     text-indent: 3vw hanging;
 }
 
 #splash-2 {
     font-size: 10vw;
-    color: #842BD6;
+    color: var(--color-accent);
 }
 
 #splash-picture {
