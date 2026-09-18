@@ -36,12 +36,18 @@ body * {
 }
 
 #splash-1 {
-    font-size: 7rem;
+    font-size: 7vw;
     color: #12061F;
-    text-indent: 3rem hanging;
+    text-indent: 3vw hanging;
 }
 
 #splash-2 {
-    font-size: 10rem;
+    font-size: 10vw;
     color: #842BD6;
+}
+
+#splash-picture {
+    max-width: 15vw;
+    height: auto;
+    width: auto;
 }
