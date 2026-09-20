@@ -79,6 +79,10 @@ footer {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 #splash-container {
     display: flex;
     justify-content: space-evenly;
