@@ -35,6 +35,7 @@ body {
     background-color: white;
     color: black;
     font-family: "Ubuntu", sans-serif;
+    font-size: large;
 
     margin: 0;
     padding-left: 15vw;
@@ -42,6 +43,9 @@ body {
 
     --color-body: #12061F;
     --color-accent: #842BD6;
+    --color-accent-light: #842BD610;
+    --color-negative: #eeeeee;
+    --color-none: #00000000;
 }
 
 body * {
@@ -49,6 +53,30 @@ body * {
     animation-duration: .5s;
     animation-fill-mode: backwards;
     animation-delay: calc(.1s * (sibling-index() - 1));
+}
+
+footer {
+    margin-top: 10vh;
+
+    /* Only top corners are rounded */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-accent);
+    border-bottom: var(--color-none);
+
+    background-color: var(--color-accent-light);
+
+    padding: 5vh 5vh;
+
+    text-align: center;
+
+    /* To make content to page end negative space
+       equal footer border to content negative space */
+    & > p {
+        margin-bottom: 0;
+    }
 }
 
 #splash-container {
@@ -80,7 +108,7 @@ body * {
 #scroll-marker {
     text-align: center;
     color: var(--color-accent);
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     
     transition: opacity 0.3s;
 
@@ -93,5 +121,16 @@ body * {
         animation-duration: 4s;
         animation-delay: 1s;
         animation-iteration-count: infinite;
+    }
+}
+
+.social-link {
+    font-size: xx-large;
+    transition: transform 0.2s;
+    color: var(--color-accent);
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.5);
     }
 }
