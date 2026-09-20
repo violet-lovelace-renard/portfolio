@@ -23,7 +23,24 @@
         alt="Headshot of Violet Renard"
       />
     </div>
+
+    <div id="scroll-marker">
+      <p>Scroll down for more</p>
+      <i id="scroll-bouncer" class="fa-solid fa-angle-down"></i>
+    </div>
+
     <h2>About me</h2>
     <!-- TODO: footer -->
   </body>
+  <script>
+    function scrollHandler() {
+      // Only update after we know the fade-in animation is done.
+      if ((Date.now() - performance.timeOrigin) < 1000) return;
+
+      const marker = document.getElementById("scroll-marker");
+      marker.style.opacity = (window.scrollY > 1) ? 0 : 1;
+    }
+
+    document.addEventListener("scroll", scrollHandler);
+  </script>
 </html>
