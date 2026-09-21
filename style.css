@@ -44,6 +44,8 @@ body {
     --color-body: #12061F;
     --color-accent: #842BD6;
     --color-accent-light: #f3e5ff;
+    --color-complement: #ffe13a;
+    --color-complement-light: #fffce8;
     --color-negative: #eeeeee;
     --color-none: #00000000;
 }
@@ -140,6 +142,21 @@ strong {
     p {
         margin-bottom: 0;
     }
+}
+
+.work-in-progress {
+    margin-top: 10vh;
+
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-complement);
+
+    background-color: var(--color-complement-light);
+
+    padding: 1vh 1vh;
+
+    text-align: center;
 }
 
 #splash-container {
