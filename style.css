@@ -212,6 +212,32 @@ strong {
     }
 }
 
+#banner-container {
+    display: flex;
+    column-gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-1 {
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--color-body);
+    text-indent: 1vw hanging;
+}
+
+#banner-2 {
+    font-size: 5vw;
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+#banner-picture {
+    max-width: 8vw;
+    height: auto;
+    width: auto;
+}
+
 #flag-collection {
     display: flex;
     flex-wrap: wrap;
