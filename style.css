@@ -79,6 +79,15 @@ footer {
     & > p {
         margin-bottom: 0;
     }
+
+    /* Present nav items in one line */
+    & > nav > ul {
+        padding-left: 0;
+        
+        & > li {
+            display: inline;
+        }
+    }
 }
 
 a {
