@@ -35,7 +35,7 @@ body {
     background-color: white;
     color: black;
     font-family: "Ubuntu", sans-serif;
-    font-size: large;
+    font-size: medium;
 
     margin: 0;
     padding-left: 15vw;
@@ -48,6 +48,10 @@ body {
     --color-complement-light: #fffce8;
     --color-negative: #eeeeee;
     --color-none: #00000000;
+
+    @media (min-width: 600px) {
+        font-size: large;
+    }
 }
 
 body * {
