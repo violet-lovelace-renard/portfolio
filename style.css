@@ -58,7 +58,7 @@ body * {
     animation-name: fade-in;
     animation-duration: .5s;
     animation-fill-mode: backwards;
-    animation-delay: calc(.1s * (sibling-index() - 1));
+    animation-delay: calc(.075s * (sibling-index() - 1));
 }
 
 footer {
