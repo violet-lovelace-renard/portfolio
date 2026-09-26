@@ -314,7 +314,6 @@ ol {
 }
 
 #infobar {
-    /* Only top corners are rounded */
     border-radius: 25px;
     border-width: 2px;
     border-style: solid;
