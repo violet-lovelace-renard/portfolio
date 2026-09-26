@@ -301,7 +301,15 @@ ol {
     }
 }
 
-#floating-sidebar {
+#section-cv {
+    @media (min-width: 800px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+}
+
+#infobar {
     /* Only top corners are rounded */
     border-radius: 25px;
     border-width: 2px;
@@ -314,25 +322,40 @@ ol {
 
     text-align: center;
 
-    p {
+    & > p {
         margin-top: 10px;
         margin-bottom: 0;
     }
-}
 
-#floating-picture {
-    max-width: 30vw;
-    height: auto;
-    width: auto;
+    & > img {
+        max-width: 30vw;
+        height: auto;
+        width: auto;
 
-    margin-bottom: 18px;
-}
+        margin-bottom: 18px;
 
-#floating-name {
-    font-weight: bold;
-    font-size: large;
-    
-    @media (min-width: 600px) {
-        font-size: larger;
+    }
+
+    & > .infobar-name {
+        font-weight: bold;
+        font-size: large;
+    }
+
+    @media (min-width: 800px) {
+        position: sticky;
+        top: 2vh;
+        flex: initial;
+
+        margin: 2vh;
+        padding: 2vh 2vh;
+
+        & > img {
+            max-width: 10vw;
+        }
+
+        & > .infobar-name {
+            font-size: larger;
+        }
     }
 }
+

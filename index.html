@@ -29,119 +29,123 @@
       <img id="scroll-bouncer" src="icons/angle-down.svg" />
     </div>
 
-    <div id="floating-sidebar">
-      <img
-        src="assets/selfie.jpg"
-        id="floating-picture"
-        alt="Headshot of Violet Renard"
-      />
-      
-      <p id="floating-name">Violet Lovelace Renard</p>
+    <div id="section-cv">
+      <div id="infobar">
+        <img
+          src="assets/selfie.jpg"
+          id="floating-picture"
+          alt="Headshot of Violet Renard"
+        />
+        
+        <p class="infobar-name">Violet Lovelace Renard</p>
 
-      <p><a href="mailto:violet.renard@proton.me">violet.renard@proton.me</a></p>
+        <p><a href="mailto:violet.renard@proton.me">violet.renard@proton.me</a></p>
 
-      <p style="margin-top: 2rem;"">B.S. in Computer Science, Cognitive & Brain Science</p>
-      <p>Tufts University class of '27</p>
+        <p style="margin-top: 2rem;"">B.S. in Computer Science, Cognitive & Brain Science</p>
+        <p>Tufts University class of '27</p>
 
-      <p style="margin-top: 2rem;""><strong>Contents</strong></p>
-      <p>
-        <a href="#">(Top)</a><br />
-        <a href="#skills">Skills</a><br />
-        <a href="#education">Education</a><br />
-        <a href="#experience">Experience</a><br />
-        <a href="#bottom">(Bottom)</a>
-      </p>
+        <p style="margin-top: 2rem;""><strong>Contents</strong></p>
+        <p>
+          <a href="#">(Top)</a><br />
+          <a href="#skills">Skills</a><br />
+          <a href="#education">Education</a><br />
+          <a href="#experience">Experience</a><br />
+          <a href="#bottom">(Bottom)</a>
+        </p>
+      </div>
+
+      <div>
+        <h2>Curriculum vitae</h2>
+
+        <h3 id="skills">Skills</h3>
+        <hr />
+
+        <p>
+          <strong>Languages</strong>: C/C++, Dart, HTML/CSS, Java, JS/TS, LaTeX, PHP, Python, R, Scheme, SQL, Standard ML
+        </p>
+        
+        <p>
+          <strong>Tools</strong>: Balsamiq, Git, MS Office, Qualtrics, RStudio, Stata, Unix
+        </p>
+        
+        <p>
+          <strong>Libraries</strong>: Flutter, Matplotlib, NumPy, Pandas, PsychoPy, React, Tailwind, TensorFlow
+        </p>
+
+        <h3 id="education">Education</h3>
+        <hr />
+
+        <h4 class="resume-item">Tufts University<span style="font-weight: normal;"> • School of Engineering '27</span></h4>
+        
+        <p>B.S. in Computer Science, Cognitive & Brain Science</p>
+
+        <h3 id="experience">Experience</h3>
+        <hr />
+
+        <h4 class="resume-item"">Teaching Fellow in Computer Science</h4>
+        <p>Tufts University • Sep 2024 – Present</p>
+        <ul>
+          <li><strong class="purple">Programming Languages</strong> (Fall 2025 –): oversaw recitations, contributed to course materials, and supervised grading meetings for class TAs.</li>
+          <li><strong class="purple">Intro Computer Science</strong> (Fall 2024 – Spr 2025): held office hours, led labs, and graded homeworks and tests for 300+ students.</li>
+        </ul>
+
+        <h4 class="resume-item"">Software Developer Intern</h4>
+        <p>Epic Systems • May 2026 – Aug 2026</p>
+        <ul>
+          <li><strong class="purple">Conducted an independent investigation</strong> on resident scheduling and auto-scheduling.</li>
+          <li><strong class="purple">Implemented a proof-of-concept prototype</strong> using React and Google's CP-SAT to demonstrate project feasibility.</li>
+          <li><strong class="purple">Created detailed mockups</strong> using Inkscape, Powerpoint, and Balsamiq for project handoff.</li>
+        </ul>
+
+        <h4 class="resume-item"">Software & Robotics Researcher</h4>
+        <p>Tufts Human-Robot Interaction Lab • May 2024 – Dec 2025</p>
+        <ul>
+          <li>
+            <strong class="purple">Co-authored a technical paper</strong> proposing neurosymbolic extraction of semantic frame relations using LLMs.
+            <p class="reference"><a href="https://openreview.net/forum?id=uli4oKYeVN">"Frame Semantics for Human-Robot Interaction"</a>. Twelfth Annual Conference on Advances in Cognitive Systems.</p>
+          </li>
+          <li><strong class="purple">Developed an open-source, full-stack web application</strong> using React and Spring for users of the DIARC cognitive architecture to inspect running components.</li>
+        </ul>
+        
+        <h4 class="resume-item"">Software & Research Intern</h4>
+        <p>Pison Technology • Feb 2025 – Aug 2025</p>
+        <ul>
+          <li><strong class="purple">Shipped the Insight Cards feature</strong> set into the Pison companion app, increasing user fitness and engagement.</li>
+          <li><strong class="purple">Co-authored a research paper</strong> on the effects of stress on cognitive performance and cognitive monitoring methods. Currently under review.</li>
+        </ul>
+        
+        <h4 class="resume-item"">Instructor</h4>
+        <p>KTBYTE Computer Science Academy • Sep 2021 – Sep 2024</p>
+        <ul>
+          <li><strong class="purple">Taught 6 Java classes for kids</strong> online, varying from beginner-level to intermediate material.</li>
+          <li><strong class="purple">Led online and in-person workshops</strong>, with an emphasis on student-designed and -driven projects.</li>
+        </ul>
+        
+        <h4 class="resume-item"">Full-Stack Developer</h4>
+        <p>JumboCode • Sep 2023 – May 2024</p>
+        <ul>
+          <li><strong class="purple">Designed website UI components</strong> with React and Tailwind CSS for Bi Women Quarterly, a local nonprofit.</li>
+          <li><strong class="purple">Implemented RESTful endpoints</strong> with MongoDB and Clerk in a React web application handling dozens of author submissions.</li>
+        </ul>
+        
+        <h4 class="resume-item"">RISE Intern</h4>
+        <p>BU Computational Neuroscience & Vision Lab • Jul 2022 – Dec 2023</p>
+        <ul>
+          <li><strong class="purple">Designed and ran a novel computational experiment</strong> in PsychoPy using the Rotating Tilted-Lines Illusion.</li>
+          <li>
+            <strong class="purple">Authored a research paper</strong> proposing the use of optical illusions to detect cognitive disorders such as dyslexia, ASD, and Alzheimer's; currently under review at <em>Neuroscience</em>.
+            <p class="reference"><a href="https://www.biorxiv.org/content/10.64898/2026.03.05.709956v1">"The rotating tilted lines illusion for the evaluation of cognitive abnormalities"</a>. bioRxiv.</p>
+          </li>
+        </ul>
+        
+        <h4 class="resume-item"">Research Intern</h4>
+        <p>UMass Amherst Neuro Learning & Performance Lab • Jun 2021 – Feb 2023</p>
+        <ul>
+          <li><strong class="purple">Applied statistical methods</strong> in R and Python to analyze participants' use of heuristics in decision-making.</li>
+          <li><strong class="purple">Developed user interfaces and mouse-tracking software</strong> in PsychoPy for use in experiments exploring aggression, inhibition, and risk-taking behavior.</li>
+        </ul>
+      </div>
     </div>
-
-    <h2>Curriculum vitae</h2>
-
-    <h3 id="skills">Skills</h3>
-    <hr />
-
-    <p>
-      <strong>Languages</strong>: C/C++, Dart, HTML/CSS, Java, JS/TS, LaTeX, PHP, Python, R, Scheme, SQL, Standard ML
-    </p>
-    
-    <p>
-      <strong>Tools</strong>: Balsamiq, Git, MS Office, Qualtrics, RStudio, Stata, Unix
-    </p>
-    
-    <p>
-      <strong>Libraries</strong>: Flutter, Matplotlib, NumPy, Pandas, PsychoPy, React, Tailwind, TensorFlow
-    </p>
-
-    <h3 id="education">Education</h3>
-    <hr />
-
-    <h4 class="resume-item">Tufts University<span style="font-weight: normal;"> • School of Engineering '27</span></h4>
-    
-    <p>B.S. in Computer Science, Cognitive & Brain Science</p>
-
-    <h3 id="experience">Experience</h3>
-    <hr />
-
-    <h4 class="resume-item"">Teaching Fellow in Computer Science</h4>
-    <p>Tufts University • Sep 2024 – Present</p>
-    <ul>
-      <li><strong class="purple">Programming Languages</strong> (Fall 2025 –): oversaw recitations, contributed to course materials, and supervised grading meetings for class TAs.</li>
-      <li><strong class="purple">Intro Computer Science</strong> (Fall 2024 – Spr 2025): held office hours, led labs, and graded homeworks and tests for 300+ students.</li>
-    </ul>
-
-    <h4 class="resume-item"">Software Developer Intern</h4>
-    <p>Epic Systems • May 2026 – Aug 2026</p>
-    <ul>
-      <li><strong class="purple">Conducted an independent investigation</strong> on resident scheduling and auto-scheduling.</li>
-      <li><strong class="purple">Implemented a proof-of-concept prototype</strong> using React and Google's CP-SAT to demonstrate project feasibility.</li>
-      <li><strong class="purple">Created detailed mockups</strong> using Inkscape, Powerpoint, and Balsamiq for project handoff.</li>
-    </ul>
-
-    <h4 class="resume-item"">Software & Robotics Researcher</h4>
-    <p>Tufts Human-Robot Interaction Lab • May 2024 – Dec 2025</p>
-    <ul>
-      <li>
-        <strong class="purple">Co-authored a technical paper</strong> proposing neurosymbolic extraction of semantic frame relations using LLMs.
-        <p class="reference"><a href="https://openreview.net/forum?id=uli4oKYeVN">"Frame Semantics for Human-Robot Interaction"</a>. Twelfth Annual Conference on Advances in Cognitive Systems.</p>
-      </li>
-      <li><strong class="purple">Developed an open-source, full-stack web application</strong> using React and Spring for users of the DIARC cognitive architecture to inspect running components.</li>
-    </ul>
-    
-    <h4 class="resume-item"">Software & Research Intern</h4>
-    <p>Pison Technology • Feb 2025 – Aug 2025</p>
-    <ul>
-      <li><strong class="purple">Shipped the Insight Cards feature</strong> set into the Pison companion app, increasing user fitness and engagement.</li>
-      <li><strong class="purple">Co-authored a research paper</strong> on the effects of stress on cognitive performance and cognitive monitoring methods. Currently under review.</li>
-    </ul>
-    
-    <h4 class="resume-item"">Instructor</h4>
-    <p>KTBYTE Computer Science Academy • Sep 2021 – Sep 2024</p>
-    <ul>
-      <li><strong class="purple">Taught 6 Java classes for kids</strong> online, varying from beginner-level to intermediate material.</li>
-      <li><strong class="purple">Led online and in-person workshops</strong>, with an emphasis on student-designed and -driven projects.</li>
-    </ul>
-    
-    <h4 class="resume-item"">Full-Stack Developer</h4>
-    <p>JumboCode • Sep 2023 – May 2024</p>
-    <ul>
-      <li><strong class="purple">Designed website UI components</strong> with React and Tailwind CSS for Bi Women Quarterly, a local nonprofit.</li>
-      <li><strong class="purple">Implemented RESTful endpoints</strong> with MongoDB and Clerk in a React web application handling dozens of author submissions.</li>
-    </ul>
-    
-    <h4 class="resume-item"">RISE Intern</h4>
-    <p>BU Computational Neuroscience & Vision Lab • Jul 2022 – Dec 2023</p>
-    <ul>
-      <li><strong class="purple">Designed and ran a novel computational experiment</strong> in PsychoPy using the Rotating Tilted-Lines Illusion.</li>
-      <li>
-        <strong class="purple">Authored a research paper</strong> proposing the use of optical illusions to detect cognitive disorders such as dyslexia, ASD, and Alzheimer's; currently under review at <em>Neuroscience</em>.
-        <p class="reference"><a href="https://www.biorxiv.org/content/10.64898/2026.03.05.709956v1">"The rotating tilted lines illusion for the evaluation of cognitive abnormalities"</a>. bioRxiv.</p>
-      </li>
-    </ul>
-    
-    <h4 class="resume-item"">Research Intern</h4>
-    <p>UMass Amherst Neuro Learning & Performance Lab • Jun 2021 – Feb 2023</p>
-    <ul>
-      <li><strong class="purple">Applied statistical methods</strong> in R and Python to analyze participants' use of heuristics in decision-making.</li>
-      <li><strong class="purple">Developed user interfaces and mouse-tracking software</strong> in PsychoPy for use in experiments exploring aggression, inhibition, and risk-taking behavior.</li>
-    </ul>
 
     <footer id="bottom">
       <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/violet-lovelace-renard/">
